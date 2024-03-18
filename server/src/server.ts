@@ -29,7 +29,6 @@ app.post("/todos", (req, res) => {
 // DELETE request to delete a todo by ID
 app.delete("/todos/:id", (req, res) => {
   const { id } = req.params;
-  // Assuming you have logic to find and remove the todo with the given ID from the array
   // For simplicity, just sending a success message here
   res.status(204).send(`Todo with ID ${id} deleted successfully`);
 });
